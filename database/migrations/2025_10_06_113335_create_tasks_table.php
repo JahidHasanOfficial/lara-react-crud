@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
-            $table->string('question');
+            $table->string('question')->nullable();
             $table->text('answer')->nullable();
             $table->string('image')->nullable();
             $table->timestamps();
